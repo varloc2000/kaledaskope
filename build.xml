@@ -1,0 +1,7 @@
+<project name="scope" default="assets">
+    <target name="assets">
+        <property name="path" value="src/Scope/AppBundle/Resources/public/css" />
+        <exec command="lessc -x ${path}/style.less > ${path}/style.css" checkreturn="true" logoutput="true" />
+        <exec command="php app/console assets:install --symlink" checkreturn="true" logoutput="true" />
+    </target>
+</project>

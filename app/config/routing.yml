@@ -1,0 +1,4 @@
+scope_app:
+    resource: "@ScopeAppBundle/Resources/config/routing.yml"
+    prefix:   /
+
