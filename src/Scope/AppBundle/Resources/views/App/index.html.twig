@@ -2,6 +2,69 @@
 
 {% block title %}KALEDAscope of your {% endblock %}
 
-{% block content %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('bundles/scopeapp/vendor/fotorama-4.4.9/fotorama.css') }}" rel="stylesheet"/>
+{% endblock stylesheets %}
 
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('bundles/scopeapp/vendor/fotorama-4.4.9/fotorama.js') }} "></script>
+    <script>
+        $(function () {
+            $('#content-gallery').fotorama();
+        });
+    </script>
+{% endblock javascripts %}
+
+{% block content %}
+    <div class="content-circle" id="content-circle">
+        <div id="content-gallery"
+             class="content-gallery"
+             data-width="420"
+             data-height="400"
+             data-allowfullscreen="false"
+             data-arrows="true"
+             data-click="true"
+             data-swipe="false"
+             data-keyboard="true"
+             data-nav="false"
+             data-autoplay="false"
+        >
+            <div class="content-1">
+                <h3>
+                    Фото
+                </h3>
+                <ul>
+                    <li>Портрет</li>
+                    <li>Портфолио</li>
+                    <li>Репортаж</li>
+                    <li>Love Story</li>
+                    <li>Реклама</li>
+                    <li>...</li>
+                </ul>
+            </div>
+
+            <div class="content-2">
+                <h3>
+                    Видео
+                </h3>
+                <p>
+                    Помогаю подобрать образ и воплотить его в жизнь. Сотрудничаю с визажистами и костюмерами.
+                </p>
+            </div>
+
+            <div class="content-3">
+                <h3>
+                    Ретушь
+                </h3>
+            </div>
+
+            <div class="content-4">
+                <h3>
+                    Монтаж
+                </h3>
+            </div>
+        </div>
+    </div>
 {% endblock %}

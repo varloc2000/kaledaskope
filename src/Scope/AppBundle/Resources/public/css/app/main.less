@@ -1,5 +1,61 @@
+@import url("//fonts.googleapis.com/css?family=Libre+Baskerville");
+@import url("//fonts.googleapis.com/css?family=Libre+Baskerville");
+
+@font-face{
+    font-family: Kobzar;
+    src: url("/bundles/scopeapp/fonts/KobzarKS_v1-020.otf") format('opentype');
+}
+
 body {
     max-width: 100%;
     max-height: 100%;
     overflow: hidden;
+}
+
+.content-circle {
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    margin-left: -210px;
+    margin-top: -210px;
+    background-color: rgba(0,0,0,0.9);
+    box-shadow: 0 0px 40px 10px #000;
+    z-index: 1000;
+    border-radius: 50%;
+
+    font-size: 25px;
+    font-family: "Kobzar";
+    letter-spacing: 3px;
+
+    .fotorama__html {
+//        padding: 20px;
+    }
+
+    h3 {
+        margin-top: 50px;
+        margin-bottom: 25px;
+        font-size: 45px;
+        font-style: italic;
+        font-family: "Kobzar";
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        list-style-position: inside;
+    }
+}
+
+.navbar-brand {
+    padding: 7.5px 15px 20.5px;
+    font-size: 35px;
+    font-style: italic;
+    font-family: "Libre Baskerville";
+}
+
+.navbar-nav.navbar-right:last-child {
+    margin-right: 0;
 }
