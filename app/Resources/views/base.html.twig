@@ -14,6 +14,7 @@
         {% block javascripts %}
             <script type="text/javascript" src="{{ asset('bundles/scopeapp/js/jquery-2.1.1.min.js') }} "></script>
             <script type="text/javascript" src="{{ asset('bundles/scopeapp/js/kaleidoscope.js') }} "></script>
+            {% include '::analytics_script.html.twig' %}
         {% endblock %}
     </body>
 </html>
