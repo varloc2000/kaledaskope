@@ -1,31 +1,43 @@
 {% extends '::base.html.twig' %}
 
-{% block title %}KALEDAscope of your {% endblock %}
+{% block title %}По ту сторону объектива{% endblock %}
 
 {% block body %}
-    {% block header %}
-        <div class="navbar navbar-default navbar-fixed-top">
-            <div>
-                <div class="navbar-header">
-                    <a href="{{ path('scope_app_homepage') }}" class="navbar-brand">KALEDA<sub>scope</sub></a>
-                </div>
-                <div class="navbar-collapse collapse" id="navbar-main">
-                    <ul class="nav navbar-nav">
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div>
+            <div class="navbar-header">
+                <a href="{{ path('scope_app_homepage') }}" class="navbar-brand">KALEDA<sub>scope</sub></a>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                </ul>
 
-                    </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="https://vk.com/kaledaskope" target="_blank">
+                            <i class="fa fa-vk"></i>
+                        </a>
+                    </li>
+                </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="https://vk.com/kaledaskope" target="_blank">
-                                <i class="fa fa-vk"></i>
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
             </div>
         </div>
-    {% endblock %}
+    </div>
 
     {% block content %}{% endblock %}
+
+    <footer class="footer">
+        <div class="copyright">
+            <small>
+                <a href="mailto:varloc2000@gmail.com?subject=KALEDAscope.by" target="_blank" class="red">v</a>
+                <a href="mailto:varloc2000@gmail.com?subject=KALEDAscope.by" target="_blank" class="orange">a</a>
+                <a href="mailto:varloc2000@gmail.com?subject=KALEDAscope.by" target="_blank" class="yellow">r</a>
+                <a href="mailto:varloc2000@gmail.com?subject=KALEDAscope.by" target="_blank" class="green">l</a>
+                <a href="mailto:varloc2000@gmail.com?subject=KALEDAscope.by" target="_blank" class="blue">o</a>
+                <a href="mailto:varloc2000@gmail.com?subject=KALEDAscope.by" target="_blank" class="blue-dark">c</a>
+                <a href="mailto:varloc2000@gmail.com?subject=KALEDAscope.by" target="_blank" class="number purple">2000</a>
+                (2014{% if '2014' != 'now'|date('Y') %} - {{ 'now'|date('Y') }}{% endif %})
+            </small>
+        </div>
+    </footer>
 {% endblock %}

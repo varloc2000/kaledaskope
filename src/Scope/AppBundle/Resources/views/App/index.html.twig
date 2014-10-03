@@ -1,7 +1,5 @@
 {% extends 'ScopeAppBundle::layout.html.twig' %}
 
-{% block title %}KALEDAscope of your {% endblock %}
-
 {% block stylesheets %}
     {{ parent() }}
     <link href="{{ asset('bundles/scopeapp/vendor/fotorama-4.4.9/fotorama.css') }}" rel="stylesheet"/>
@@ -31,7 +29,7 @@
              data-nav="false"
              data-autoplay="false"
         >
-            <div class="content-1">
+            <div>
                 <h3>
                     Фото
                 </h3>
@@ -45,7 +43,7 @@
                 </ul>
             </div>
 
-            <div class="content-2">
+            <div>
                 <h3>
                     Видео
                 </h3>
@@ -54,16 +52,27 @@
                 </p>
             </div>
 
-            <div class="content-3">
+            <div>
                 <h3>
                     Ретушь
                 </h3>
             </div>
 
-            <div class="content-4">
+            <div>
                 <h3>
                     Монтаж
                 </h3>
+            </div>
+
+            <div>
+                <h3>
+                    Заказ
+                </h3>
+                <p>
+                    Звоните на номер +37544 596 36 95,
+                    пишите <a href="mailto:kaleda-92@mail.ru?subject=KALEDAscope.by" target="_blank">письма</a>
+                    или <a href="https://vk.com/kaledaskope" target="_blank">сообщения</a>
+                </p>
             </div>
         </div>
     </div>

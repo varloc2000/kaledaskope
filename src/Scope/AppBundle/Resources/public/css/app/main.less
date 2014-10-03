@@ -5,11 +5,36 @@
     font-family: Kobzar;
     src: url("/bundles/scopeapp/fonts/KobzarKS_v1-020.otf") format('opentype');
 }
+@font-face{
+    font-family: Cinzel;
+    src: url("/bundles/scopeapp/fonts/Cinzel-Regular.otf") format('opentype');
+}
+@font-face{
+    font-family: Crackin;
+    src: url("/bundles/scopeapp/fonts/crackin.ttf") format('truetype');
+}
+@font-face{
+    font-family: Goudy;
+    src: url("/bundles/scopeapp/fonts/GoudyTrajan-Regular-trial.otf") format('opentype');
+}
 
 body {
     max-width: 100%;
     max-height: 100%;
     overflow: hidden;
+}
+
+.navbar-brand {
+    padding: 7.5px 15px 20.5px;
+    font-size: 35px;
+    font-style: italic;
+    font-family: "Goudy";
+//    font-family: "Libre Baskerville";
+    color: #fff;
+}
+
+.navbar-nav.navbar-right:last-child {
+    margin-right: 0;
 }
 
 .content-circle {
@@ -30,8 +55,8 @@ body {
     font-family: "Kobzar";
     letter-spacing: 3px;
 
-    .fotorama__html {
-//        padding: 20px;
+    p {
+        padding: 0 40px;
     }
 
     h3 {
@@ -49,13 +74,51 @@ body {
     }
 }
 
-.navbar-brand {
-    padding: 7.5px 15px 20.5px;
-    font-size: 35px;
-    font-style: italic;
-    font-family: "Libre Baskerville";
-}
+/* Footer */
+footer.footer{
+    position: absolute;
+    color: #ffffff;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
 
-.navbar-nav.navbar-right:last-child {
-    margin-right: 0;
+    a {
+        font-family: "Libre Baskerville";
+    }
+
+    .copyright {
+        position: absolute;
+        width: 250px;
+        bottom: 0;
+        text-align: center;
+        padding-bottom: 5px;
+        right: 0;
+        letter-spacing: 1px;
+        font-size: 9px;
+    }
+    .copyright a {
+        width: 10px;
+        display: inline-block;
+        position: relative;
+        color: #fff;
+    }
+    .copyright a:hover {
+        border: none!important;
+    }
+    .copyright a.number {
+        width: 44px;
+    }
+
+    /* Color classes*/
+    .red {background-color: rgba(213, 33, 0, 0.5);}
+    .orange {background-color: rgba(255, 102, 0, 0.5);}
+    .yellow {background-color: rgba(251, 199, 0, 0.5);}
+    .green {background-color: rgba(106, 166, 59, 0.5);}
+    .dark-green {background-color: rgba(0, 102, 0, 0.5);}
+    .blue {background-color: rgba(2, 146, 192, 0.5);}
+    .blue-main {background-color: rgba(80, 53, 135, 0.5);}
+    .blue-dark {background-color: rgba(2, 41, 255, 0.5);}
+    .purple {background-color: rgba(81, 34, 180, 0.5);}
+    .gray {background-color: rgba(153, 153, 153, 0.5);}
 }
