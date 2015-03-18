@@ -119,11 +119,7 @@
     })(this);
 
     image.variants = [
-        'https://pp.vk.me/c605523/v605523878/5862/mPR6I-x5H5s.jpg',
-        'https://pp.vk.me/c5487/u15229878/140766403/z_7b262916.jpg',
-        'https://pp.vk.me/c413524/v413524878/93b4/fgr-ynaehCQ.jpg',
-        'https://pp.vk.me/c9269/v9269878/1731/ex_DRHwdU1o.jpg',
-        'https://pp.vk.me/c605523/v605523878/572a/l0N1R_Vwu8c.jpg'
+        '/bundles/scopeapp/images/kaledascope_bg.jpg'
     ];
 
     image.src = image.variants[Math.floor(Math.random() * image.variants.length)];
