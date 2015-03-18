@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    # Turn mod_rewrite on
+    RewriteEngine On
+    RewriteBase /
+
+    RewriteCond %{DOCUMENT_ROOT}/web/$1 -f [OR]
+    RewriteCond %{DOCUMENT_ROOT}/web/$1 -d [OR]
+    RewriteCond %{DOCUMENT_ROOT}/web/$1 -l
+    RewriteRule ^(.*)$ web/$1
+</IfModule>
